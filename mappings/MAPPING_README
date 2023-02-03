@@ -2,13 +2,13 @@ These read mappings can be visualized with Integrated Genomics Viewer (IGV).
 
 
 # _Macadamia integrifolia_
-Reference genome sequence: GCF_013358625.1
-Annotation version: NCBI Macadamia integrifolia Annotation Release 100
+Reference genome sequence: [GCF_013358625.1](https://www.ncbi.nlm.nih.gov/genome/?term=Macadamia+integrifolia)
+Annotation version: [NCBI Macadamia integrifolia Annotation Release 100](https://www.ncbi.nlm.nih.gov/genome/?term=Macadamia+integrifolia)
 
 
 # _Musa balbisiana_
 Reference genome sequence: [DH-PKW](https://banana-genome-hub.southgreen.fr/organism/45877)
-Annotation version: https://banana-genome-hub.southgreen.fr/organism/45877
+Annotation version: [DH-PKW](https://banana-genome-hub.southgreen.fr/organism/45877)
 
 
 
@@ -19,6 +19,6 @@ Annotation version: [BanananaGenomeHub 2022-08-26](https://banana-genome-hub.sou
 
 
 # _Nymphaea colorata_
-Reference genome sequence: GCF_008831285.2
-Annotation version: NCBI RefSeq Nymphaea colorata Annotation Release 101
+Reference genome sequence: [GCF_008831285.2](https://www.ncbi.nlm.nih.gov/genome/?term=Nymphaea+colorata)
+Annotation version: [NCBI RefSeq Nymphaea colorata Annotation Release 101](https://www.ncbi.nlm.nih.gov/genome/?term=Nymphaea+colorata)
 
