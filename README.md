@@ -10,8 +10,9 @@ This repository contains scripts that were developed for the investigation of su
 3) Retrieving RNA-seq datasets: The [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) offers a huge amount of RNA-seq datasets that can be retrieved via [fastq-dump](https://github.com/ncbi/sra-tools) (part of the SRA toolkit). The installation of fastq-dump requires a proper configuration of temporary and output folders. [This instruction](https://akiomiyao.github.io/ped/sratoolkit/index.html) worked well in our hands.
 4) RNA-seq read mapping: Proper split read aligners are important for the correct placement of RNA-seq reads across exon-intron borders. [STAR](https://github.com/alexdobin/STAR) or [HISAT2](http://daehwankimlab.github.io/hisat2/) are recommended for this task. Please see the respective documentations for details.
 5) Extraction of region of interest: [Samtools](http://www.htslib.org/) allows the extraction of a certain region of interest from a read mapping (BAM file): ``` samtools view input.bam "ChrX:13-37" > output.bam ```.
-6) Conversion of BAM into COV file: [construct_RNA_seq_coverage_file.py](https://github.com/bpucker/ncss2018/blob/master/construct_RNA_seq_coverage_file.py) is a python3 script that converts a BAM file into a COV file. This coverage file is a table listing the number of reads that map to each position in the reference.   
-
+6) Inspection of RNA-seq read mapping: [Integrative Genomics Viewer (IGV)])(https://software.broadinstitute.org/software/igv/) is a freely available tool that allows inspection of read mappings. Please see the respetive documentation for additional details.
+7) Conversion of BAM into COV file: [construct_RNA_seq_coverage_file.py](https://github.com/bpucker/ncss2018/blob/master/construct_RNA_seq_coverage_file.py) is a python3 script that converts a BAM file into a COV file. This coverage file is a table listing the number of reads that map to each position in the reference. It is possible to generate a coverage file based on the original BAM file or based on an extracted region.
+8) Visualization of RNA-seq coverage: The coverage_plotter.py (see below) can generate a figure based on the given coverage file. It is also possible to supply a GFF3 file to display the positions of annoated exons below the coverage plot. See the description below for details.
 
 
 
