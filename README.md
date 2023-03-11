@@ -20,7 +20,7 @@ Usage:
 
 ```
 Usage:
-  python3 extract_bam_region.py --in <DIR> --out <DIR> --seq <STR> --start <INT> --end <INT>
+  python3 extract_bam_region.py --in <FILE> --out <FILE> --seq <STR> --start <INT> --end <INT>
   
   --in      STR   BAM input folder
   --out     STR   BAM output file
@@ -38,6 +38,32 @@ Usage:
 `--start` specifies a start position of the genomic region.
 
 `--end` specifies an end position of the genomic region.
+
+
+## Coverage plotting
+```
+Usage:
+  python3 coverage_plotter.py --cov <FILE> --out <DIR> --seq <STR> --start <INT> --end <INT>
+  
+  --cov     STR   Coverage input file
+  --out     STR   Output folder
+  --seq     STR   Sequence name
+  --start   INT   Region start
+  --end     INT   Region end
+```
+
+`--in` specifies a coverage file resulting from an RNA-seq read mapping.
+
+`--out` specifies an output folder.
+
+`--seq` specifies a sequence of interest (e.g. contig/scaffold/pseudochromosome).
+
+`--start` specifies a start position on the sequence of interest.
+
+`--end` specifies an end position on the sequence of interest.
+
+
+
 
 
 ## References
