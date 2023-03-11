@@ -1,4 +1,4 @@
-# CHS
+# Manual inspection of CHS gene models
 CHS gene structure prediction analysis
 
 ## BAM collection
