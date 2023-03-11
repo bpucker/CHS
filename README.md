@@ -9,8 +9,8 @@ This repository contains scripts that were developed for the investigation of su
 2) Global alignment of all collected sequences: [MAFFT](https://mafft.cbrc.jp/alignment/software/), [MUSCLE](https://www.drive5.com/muscle/), or [CLUSTAL](http://www.clustal.org/clustal2/) can be used to align all collected sequences. The alignment tools are available for local analysis and on the EBI website. An inspection of the alignment can already help to identify likely artifacts. If the sequence in question is not supported by any other sequence, it is likely an artifact. The other explanaition would be striking biological event during evolution.
 3) Retrieving RNA-seq datasets: The [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) offers a huge amount of RNA-seq datasets that can be retrieved via [fastq-dump](https://github.com/ncbi/sra-tools) (part of the SRA toolkit). The installation of fastq-dump requires a proper configuration of temporary and output folders. [This instruction](https://akiomiyao.github.io/ped/sratoolkit/index.html) worked well in our hands.
 4) RNA-seq read mapping: Proper split read aligners are important for the correct placement of RNA-seq reads across exon-intron borders. [STAR](https://github.com/alexdobin/STAR) or [HISAT2](http://daehwankimlab.github.io/hisat2/) are recommended for this task. Please see the respective documentations for details.
-5) Extraction of region of interest: [Samtools](http://www.htslib.org/) allows the extraction of a certain region of interest from a read mapping (BAM file): ``` samtools view input.bam "ChrX:13-37" > output.bam ```. 
-7)   
+5) Extraction of region of interest: [Samtools](http://www.htslib.org/) allows the extraction of a certain region of interest from a read mapping (BAM file): ``` samtools view input.bam "ChrX:13-37" > output.bam ```.
+6) Conversion of BAM into COV file: [construct_RNA_seq_coverage_file.py](https://github.com/bpucker/ncss2018/blob/master/construct_RNA_seq_coverage_file.py) is a python3 script that converts a BAM file into a COV file. This coverage file is a table listing the number of reads that map to each position in the reference.   
 
 
 
