@@ -1,4 +1,4 @@
-# Manual inspection of CHS gene models
+# Manual inspection of _CHS_ gene models
 
 This repository contains scripts that were developed for the investigation of suspicious _CHS_ gene models. Multiple copies of the CHS domain within the same protein were suggested by the database entries. In addition to the scripts, detailed instructions are shared how to investigate gene models.
 
