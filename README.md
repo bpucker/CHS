@@ -1,5 +1,14 @@
 # Manual inspection of CHS gene models
-CHS gene structure prediction analysis
+
+This repository contains scripts that were developed for the investigation of suspicious _CHS_ gene models. Multiple copies of the CHS domain within the same protein were suggested by the database entries. In addition to the scripts, detailed instructions are shared how to investigate gene models.
+
+### How to analyze suspicious gene models that might be an annotation artifact?
+
+
+
+
+
+
 
 ## BAM collection
 
