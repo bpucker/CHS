@@ -7,7 +7,8 @@ This repository contains scripts that were developed for the investigation of su
 
 1) Identification homologs in many closely related species: BLAST is an efficient tool for the identification of sequences with similarity that indicates homology. [collect_best_BLAST_hits.py](https://github.com/bpucker/ApiaceaeFNS1) is a Python3 script that can be used to collect the best BLAST hits for a given FASTA file with sequences. This script requires a local installation of [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download). [DIAMOND](https://github.com/bbuchfink/diamond) is an alternative to BLAST that delivers the same output, but runs much faster at the expense of a substantially increased memory consumption. It is also possible to perform this analysis online on the NCBI [BLAST website](https://blast.ncbi.nlm.nih.gov/Blast.cgi). All hits should be downloaded as FASTA file.
 2) Global alignment of all collected sequences: [MAFFT](https://mafft.cbrc.jp/alignment/software/), [MUSCLE](https://www.drive5.com/muscle/), or [CLUSTAL](http://www.clustal.org/clustal2/) can be used to align all collected sequences. The alignment tools are available for local analysis and on the EBI website. An inspection of the alignment can already help to identify likely artifacts. If the sequence in question is not supported by any other sequence, it is likely an artifact. The other explanaition would be striking biological event during evolution.
-3) 
+3) Retrieving RNA-seq datasets: The [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) offers a huge amount of RNA-seq datasets that can be retrieved via [fastq-dump](https://github.com/ncbi/sra-tools) (part of the SRA toolkit). The installation of fastq-dump requires a proper configuration of temporary and output folders. [This instruction](https://akiomiyao.github.io/ped/sratoolkit/index.html) worked well in our hands.
+4) 
 
 
 
