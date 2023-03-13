@@ -61,11 +61,15 @@ Usage:
 Usage:
   python3 coverage_plotter.py --cov <FILE> --out <DIR> --seq <STR> --start <INT> --end <INT>
   
+  Mandatory:
   --cov     STR   Coverage input file
   --out     STR   Output folder
   --seq     STR   Sequence name
   --start   INT   Region start
   --end     INT   Region end
+  
+  Optional:
+  --gff     STR   GFF annotation file
 ```
 
 `--in` specifies a coverage file resulting from an RNA-seq read mapping.
@@ -77,6 +81,8 @@ Usage:
 `--start` specifies a start position on the sequence of interest.
 
 `--end` specifies an end position on the sequence of interest.
+
+`--gff` specifies a GFF file with exons located in the region of interest. Selection of exons is based on the specified sequence name and the given start and end positions.
 
 
 
